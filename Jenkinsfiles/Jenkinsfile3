@@ -8,7 +8,7 @@ pipeline {
         AWS_DEFAULT_REGION = "us-east-1"
     }
     stages {
-        stage("Deploying sock-shop-app microservice, the last part of the Monitoring system, and the alerting stack to EKS") {
+        stage("Deploying sock-shop-app to EKS") {
             steps {
                 script {
                     dir('k8s-manifests') {
